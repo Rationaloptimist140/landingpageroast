@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Roast - Get Brutally Honest AI Feedback</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+    header .badge {
+      display: inline-block;
+      background: #e94560;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    header h1 {
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    header h1 span { color: #e94560; }
+    header p {
+      font-size: clamp(16px, 2.5vw, 22px);
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .price-tag {
+      display: inline-block;
+      font-size: 48px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .price-sub { color: #888; font-size: 14px; margin-bottom: 32px; }
+
+    .cta-btn {
+      display: inline-block;
+      background: #e94560;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 18px 48px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .cta-btn:hover { background: #c73652; transform: translateY(-2px); }
+    .cta-sub { color: #666; font-size: 13px; margin-top: 12px; }
+
+    section { padding: 80px 20px; max-width: 900px; margin: 0 auto; }
+
+    .how-it-works h2, .what-you-get h2, .faq h2 {
+      font-size: 36px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+    }
+    .step {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .step .num {
+      width: 48px; height: 48px;
+      background: #e94560;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 900;
+      margin: 0 auto 16px;
+    }
+    .step h3 { font-size: 18px; margin-bottom: 8px; }
+    .step p { color: #888; font-size: 14px; line-height: 1.6; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .feature {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .feature .icon { font-size: 32px; margin-bottom: 12px; }
+    .feature h3 { font-size: 17px; margin-bottom: 8px; }
+    .feature p { color: #888; font-size: 14px; line-height: 1.6; }
+
+    .faq-item { border-bottom: 1px solid #222; padding: 24px 0; }
+    .faq-item h3 { font-size: 17px; margin-bottom: 8px; color: #fff; }
+    .faq-item p { color: #888; font-size: 15px; line-height: 1.7; }
+
+    .cta-section {
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      border-radius: 16px;
+      padding: 64px 32px;
+      margin: 0 20px 80px;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-section h2 { font-size: 36px; font-weight: 800; margin-bottom: 16px; }
+    .cta-section p { color: #aaa; font-size: 18px; margin-bottom: 32px; }
+
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: #444;
+      font-size: 13px;
+      border-top: 1px solid #1a1a1a;
+    }
+    footer a { color: #666; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="badge">AI-Powered Feedback</div>
+    <h1>Your Landing Page<br><span>Brutally Roasted</span></h1>
+    <p>Stop guessing why visitors leave. Get an honest, detailed AI critique of your landing page — covering copy, design, clarity, and conversions.</p>
+    <div class="price-tag">$4.99</div>
+    <div class="price-sub">One-time payment. Results in minutes.</div>
+    <br>
+    <a href="https://buy.stripe.com/test_cNifZjeCNddJgrW5Sj9ws00" class="cta-btn">Roast My Landing Page</a>
+    <div class="cta-sub">Secure payment via Stripe</div>
+  </header>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Pay $4.99</h3>
+        <p>One-time secure payment via Stripe. No subscription, no hidden fees.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Submit Your URL</h3>
+        <p>Enter your landing page URL during checkout. That's all we need.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Get Your Roast</h3>
+        <p>Receive a detailed critique by email within minutes. Actionable, honest, specific.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="what-you-get">
+    <h2>What You Get</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">&#x1F4AC;</div>
+        <h3>Copy Analysis</h3>
+        <p>Is your headline clear? Does your copy speak to your customer's pain? We'll tell you exactly what's weak.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">&#x1F3AF;</div>
+        <h3>Conversion Audit</h3>
+        <p>CTA placement, friction points, trust signals — everything that's costing you conversions.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">&#x1F50D;</div>
+        <h3>Clarity Score</h3>
+        <p>Can a stranger understand what you sell in 5 seconds? We test this and score it.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">&#x2705;</div>
+        <h3>Action Plan</h3>
+        <p>Not just criticism — a prioritised list of fixes you can implement today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>How fast will I get results?</h3>
+      <p>Usually within 5-10 minutes of payment. The AI processes your page immediately and emails you the full report.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What kind of pages can I submit?</h3>
+      <p>Any publicly accessible landing page, sales page, SaaS homepage, or product page. It just needs to be a live URL.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who is this for?</h3>
+      <p>Founders, marketers, and indie hackers who want honest feedback without paying an agency hundreds of dollars.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is payment secure?</h3>
+      <p>Yes. All payments are processed by Stripe — we never see your card details.</p>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <div class="cta-section">
+    <h2>Ready to Fix Your Landing Page?</h2>
+    <p>$4.99. No fluff. Just the honest feedback your page needs.</p>
+    <a href="https://buy.stripe.com/test_cNifZjeCNddJgrW5Sj9ws00" class="cta-btn">Get My Roast Now</a>
+    <div class="cta-sub" style="margin-top:12px; color:#555;">Results delivered by email within minutes</div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Landing Page Roast &nbsp;|&nbsp; <a href="mailto:kashifrana998@gmail.com">Contact</a></p>
+  </footer>
+
+</body>
+</html>
