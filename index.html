@@ -109,202 +109,168 @@
       background: #1a1a2e;
       padding: 32px;
       border-radius: 12px;
-      text-align: center;
+      border: 1px solid #2a2a3e;
+      transition: border 0.2s, transform 0.1s;
     }
-    .step-number {
-      display: inline-block;
-      background: #e94560;
-      color: #fff;
+    .step:hover { border-color: #e94560; transform: translateY(-4px); }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       width: 48px;
       height: 48px;
-      border-radius: 50%;
-      line-height: 48px;
+      background: #e94560;
+      color: #fff;
+      font-size: 24px;
       font-weight: 900;
-      font-size: 20px;
+      border-radius: 50%;
       margin-bottom: 16px;
     }
-    .step h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-    .step p {
-      color: #aaa;
-      line-height: 1.5;
-    }
+    .step h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+    .step p { color: #aaa; font-size: 15px; line-height: 1.5; }
 
+    .what-you-get {
+      background: #0d0d0d;
+      padding: 80px 20px;
+      text-align: center;
+    }
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
     }
     .feature {
-      background: #1a1a2e;
-      padding: 32px;
-      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
     .feature-icon {
-      font-size: 40px;
+      font-size: 48px;
       margin-bottom: 16px;
     }
-    .feature h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
-    .feature p {
-      color: #aaa;
-      line-height: 1.6;
-    }
+    .feature h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+    .feature p { color: #888; font-size: 14px; line-height: 1.6; }
 
+    .faq {
+      max-width: 700px;
+      margin: 0 auto;
+    }
     .faq-item {
       background: #1a1a2e;
       padding: 24px;
-      border-radius: 8px;
       margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid #2a2a3e;
     }
-    .faq-item h3 {
+    .faq-q {
       font-size: 18px;
+      font-weight: 700;
       margin-bottom: 12px;
+      color: #e94560;
     }
-    .faq-item p {
+    .faq-a {
       color: #aaa;
+      font-size: 15px;
       line-height: 1.6;
     }
 
     footer {
-      text-align: center;
+      background: #0d0d0d;
       padding: 40px 20px;
-      background: #0a0a0a;
-      border-top: 1px solid #222;
+      text-align: center;
+      border-top: 1px solid #1a1a2e;
     }
-    footer p {
-      color: #666;
-      font-size: 14px;
-    }
+    footer p { color: #666; font-size: 14px; }
+    footer a { color: #e94560; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="badge">BRUTALLY HONEST FEEDBACK</div>
-  <h1>Get Your Landing Page <span>Roasted</span></h1>
-  <p>AI-powered analysis that tells you exactly what's wrong with your landing page - no sugarcoating, just actionable insights.</p>
-  
-  <div class="price-tag">$1.99</div>
-  <div class="price-sub">One-time payment. Instant delivery.</div>
-  
-  <a href="#payment" class="cta-btn">Get Roasted Now</a>
-  <div class="cta-sub">Results delivered in under 5 minutes</div>
-</header>
-
-<section class="how-it-works">
-  <h2>How It Works</h2>
-  <div class="steps">
-    <div class="step">
-      <div class="step-number">1</div>
-      <h3>Submit Your URL</h3>
-      <p>Enter your landing page URL below</p>
-    </div>
-    <div class="step">
-      <div class="step-number">2</div>
-      <h3>AI Analysis</h3>
-      <p>Our AI dissects every element of your page</p>
-    </div>
-    <div class="step">
-      <div class="step-number">3</div>
-      <h3>Get Your Roast</h3>
-      <p>Receive a detailed, no-BS report via email</p>
-    </div>
-  </div>
-</section>
-
-<section class="what-you-get">
-  <h2>What You Get</h2>
-  <div class="features">
-    <div class="feature">
-      <div class="feature-icon">🔥</div>
-      <h3>Brutally Honest Critique</h3>
-      <p>No fluff. We tell you exactly what sucks and why visitors are bouncing.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🎯</div>
-      <h3>Actionable Insights</h3>
-      <p>Specific recommendations you can implement immediately to boost conversions.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">⚡</div>
-      <h3>Fast Turnaround</h3>
-      <p>Get your roast in under 5 minutes. No waiting, no scheduling calls.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📊</div>
-      <h3>Conversion Analysis</h3>
-      <p>Deep dive into your copy, design, CTA placement, and user psychology.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">💰</div>
-      <h3>ROI-Focused</h3>
-      <p>Every suggestion is designed to help you make more money, period.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🚀</div>
-      <h3>Before/After Examples</h3>
-      <p>See exactly how to fix issues with real examples and alternatives.</p>
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <h2>FAQ</h2>
-  <div class="faq-item">
-    <h3>How long does it take?</h3>
-    <p>Most roasts are delivered within 5 minutes. Complex pages may take up to 10 minutes.</p>
-  </div>
-  <div class="faq-item">
-    <h3>What if I don't like the feedback?</h3>
-    <p>Our AI is trained on thousands of high-converting landing pages. The feedback might sting, but it's designed to help you convert better. No refunds - this is a roast, not a hug.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Can I get multiple pages roasted?</h3>
-    <p>Yes! Just submit separate orders for each page you want analyzed.</p>
-  </div>
-  <div class="faq-item">
-    <h3>What industries do you cover?</h3>
-    <p>All of them. SaaS, ecommerce, info products, services - if you have a landing page, we can roast it.</p>
-  </div>
-</section>
-
-<section id="payment" style="text-align: center; background: #1a1a2e; padding: 60px 20px; border-radius: 16px;">
-  <h2 style="margin-bottom: 24px;">Ready to Get Roasted?</h2>
-  <p style="color: #aaa; margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto;">Enter your landing page URL and email. Pay $1.99. Get your roast delivered instantly.</p>
-  
-  <form id="roast-form" style="max-width: 500px; margin: 0 auto;">
-    <input type="url" id="landing-url" placeholder="https://yourlandingpage.com" required 
-           style="width: 100%; padding: 16px; margin-bottom: 16px; border-radius: 8px; border: 2px solid #333; background: #0a0a0a; color: #fff; font-size: 16px;">
-    <input type="email" id="email" placeholder="your@email.com" required 
-           style="width: 100%; padding: 16px; margin-bottom: 24px; border-radius: 8px; border: 2px solid #333; background: #0a0a0a; color: #fff; font-size: 16px;">
-    <button type="submit" class="cta-btn" style="width: 100%;">Pay $1.99 & Get Roasted</button>
-  </form>
-  
-  <p style="color: #666; font-size: 12px; margin-top: 24px;">Secure payment via Stripe. Results emailed within 5 minutes.</p>
-</section>
-
-<footer>
-  <p>&copy; 2024 Landing Page Roast. All rights reserved.</p>
-  <p style="margin-top: 8px;"><a href="mailto:support@landingpageroast.com" style="color: #e94560; text-decoration: none;">Contact Support</a></p>
-</footer>
-
-<script>
-  document.getElementById('roast-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
+  <header>
+    <div class="badge">BETA Launch Special</div>
+    <h1>Get Your Landing Page <span>Roasted</span></h1>
+    <p>AI-powered brutal honesty about what's killing your conversions</p>
     
-    const url = document.getElementById('landing-url').value;
-    const email = document.getElementById('email').value;
+    <div class="price-tag">$1.99</div>
+    <div class="price-sub">Limited time beta pricing (normally $19)</div>
     
-    // Here you'd integrate with Stripe
-    // For now, redirect to a Stripe Checkout or payment link
-    alert('Payment integration coming soon! URL: ' + url + ', Email: ' + email);
-  });
-</script>
+    <button class="cta-btn" onclick="window.location.href='https://buy.stripe.com/test_cNifZjeCNddJgrW5Sj9ws00'">
+      Pay $1.99 & Get Roasted
+    </button>
+    <div class="cta-sub">Instant analysis • Brutally honest feedback • Actionable fixes</div>
+  </header>
 
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Submit Your URL</h3>
+        <p>Drop your landing page link and complete payment</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>AI Does the Roasting</h3>
+        <p>Our AI analyzes every pixel, word, and conversion element</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Get Brutal Feedback</h3>
+        <p>Receive a detailed roast report via email in minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-you-get">
+    <h2>What You'll Get</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🔥</div>
+        <h3>Conversion Killers</h3>
+        <p>Specific issues sabotaging your sign-ups and sales</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💡</div>
+        <h3>Copy That Works</h3>
+        <p>Rewritten headlines and CTAs that actually convert</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎨</div>
+        <h3>Design Fixes</h3>
+        <p>Visual hierarchy and UX improvements that guide users</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Quick Wins</h3>
+        <p>Prioritized changes you can implement today</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <div class="faq-q">How long does it take?</div>
+      <div class="faq-a">Most roast reports are delivered within 10-15 minutes of payment.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I don't like the feedback?</div>
+      <div class="faq-a">No BS guarantee: if the roast doesn't give you at least 3 actionable improvements, full refund.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I get multiple pages roasted?</div>
+      <div class="faq-a">Each roast is $1.99 per page. Submit as many as you want!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How brutal is "brutal"?</div>
+      <div class="faq-a">Think Gordon Ramsay meets UX audit. We don't sugarcoat, but every critique comes with a fix.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Landing Page Roast. <a href="#">Terms</a> • <a href="#">Privacy</a></p>
+  </footer>
 </body>
 </html>
